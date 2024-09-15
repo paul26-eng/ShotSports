@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>SHOTSPORT</title>
+        <link rel="stylesheet" href="contactanos.css">
+    </head>
+    <body>
+        <header>
+            <h1>Tienda Online GYM</h1>
+        </header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="acerca_de_nosotros.html">Sobre Nosotros</a>
+            <a href="carrito.html">Carrito</a>
+            <a href="contactanos.html">Contactanos</a>
+            
+        </nav>  
+            </section>
+   
+                <section class="contact">
+                    <h2>Contactanos</h2>
+                    <div class="contact-form">
+                        <form>
+                            <input type="text" placeholder="Edgar Gonzales">
+                            <input type="email" placeholder="pasteleria@gmail.com">
+                            <textarea placeholder="Mensaje" rows="5" required></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
+                 </div>
+                </section>
+             <footer>
+              <p>&copy; 2024 SHOPSPORT. Todos los derechos reservados.</p>
+              </footer>  
+              <!-- Asegúrate de incluir esto al final del archivo productos.html antes de </body> -->
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const aboutSection = document.querySelector('.about');
+    
+        function checkVisibility() {
+            const rect = aboutSection.getBoundingClientRect();
+            const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    
+            if (rect.top <= windowHeight && rect.bottom >= 0) {
+                aboutSection.classList.add('animate');
+            }
+        }
+    
+        window.addEventListener('scroll', checkVisibility);
+        checkVisibility(); // Verifica al cargar la página
+    });
+    </script>
+    
+    </body>
+</html>
